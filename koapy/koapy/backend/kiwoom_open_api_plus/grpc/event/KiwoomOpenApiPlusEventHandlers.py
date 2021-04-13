@@ -518,7 +518,7 @@ class KiwoomOpenApiPlusTrEventHandler(KiwoomOpenApiPlusEventHandlerForGrpc, Logg
                             break
                         response.multi_data.values.add().values.extend(row)  # pylint: disable=no-member
                 else:
-                    self.logger.debug('Repeat count: ' + repeat_cnt)
+                    self.logger.debug('Repeat count: ' + str(repeat_cnt))
 
                     rows = [[self.control.GetCommData(trcode, recordname, i, name).strip(
                     ) for name in self._single_names] for i in range(repeat_cnt)]
