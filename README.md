@@ -35,9 +35,6 @@ with KiwoomOpenApiPlusEntrypoint() as context:
     print('Got OPT2002 Tr Data (using TransactionCall):')
     print(single)
     print(multi)
-    # 현재가 값만 출력
-    # price = output['현재가']
-    # print(price)
 ```
 ## 수정 코드
 ```python
